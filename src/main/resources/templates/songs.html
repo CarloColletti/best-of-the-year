@@ -6,6 +6,8 @@
 </head>
 <body>
   <h1>The top four is..</h1>
-  <span th:text="${listSong}"></span>
+  <ul>
+      <li th:each="song : ${ListSong}"> [[${song.getName()}]] </li>
+  </ul>
 </body>
 </html>

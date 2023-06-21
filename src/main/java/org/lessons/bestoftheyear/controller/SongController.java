@@ -17,13 +17,7 @@ public class SongController {
     //GET
     @GetMapping
     public String song(Model model) {
-        List<song> songs = getBestSongs();
-        List<String> songName = new ArrayList<>();
-        for (song s : songs) {
-            songName.add(s.getName());
-        }
-        String ListSong = String.join(", ", songName);
-        model.addAttribute("listSong", ListSong);
+        model.addAttribute("ListSong", getBestSongs());
         return "songs";
     }
 

@@ -17,14 +17,7 @@ public class MovieController {
 
     @GetMapping
     public String movie(Model model) {
-        List<movie> movies = getBestMovies();
-        List<String> movieName = new ArrayList<>();
-        for (movie m : movies) {
-            movieName.add(m.getName());
-        }
-
-        String ListMovie = String.join(", ", movieName);
-        model.addAttribute("ListMovie", ListMovie);
+        model.addAttribute("ListMovie", getBestMovies());
         return "movies";
     }
 
