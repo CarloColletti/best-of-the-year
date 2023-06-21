@@ -8,6 +8,9 @@
   <h1>The top four is..</h1>
   <ul>
       <li th:each="song : ${ListSong}"> [[${song.getName()}]] </li>
+      <li th:each="song : ${ListSong}">
+          <a th:href="@{|/songs/${song.getId()}|}">[[${song.getName()}]]</a>
+      </li>
   </ul>
 </body>
 </html>

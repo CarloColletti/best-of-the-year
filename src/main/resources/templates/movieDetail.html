@@ -2,15 +2,10 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <th:block th:replace="fragments :: head"></th:block>
-    <title>Movies</title>
+    <title>prova della prova</title>
 </head>
 <body>
   <h1>The top four is..</h1>
-  <ul>
 
-      <li th:each="movie : ${ListMovie}">
-          <a th:href="@{|/movies/${movie.getId()}|}">[[${movie.getName()}]]</a>
-      </li>
-  </ul>
 </body>
 </html>
