@@ -1,13 +1,13 @@
-package org.lessons.bestoftheyear.controller;
+package org.lessons.bestoftheyear.model;
 
-//song
-public class song {
+//movie
+public class movie {
     //attribute
     private int id;
     private String name;
 
     //constructor
-    public song(int id, String name) {
+    public movie(int id, String name) {
         this.id = id;
         this.name = name;
     }
